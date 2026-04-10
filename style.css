@@ -208,3 +208,18 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
