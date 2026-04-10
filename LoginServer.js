@@ -3,6 +3,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 
+
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -20,6 +21,10 @@ const users = [
         password: bcrypt.hashSync("123456", 10) // "123456" şifresinin hashlenmiş hali
     }
 ];
+
+const registerRoutes = require('./routes/register');
+
+app.use('/auth', registerRoutes);
 
 // --- GİRİŞ YAPMA (LOGIN) ENDPOINT'İ (SENİN KISMIN) ---
 app.post('/login', async (req, res) => {
