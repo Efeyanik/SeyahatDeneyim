@@ -4,8 +4,9 @@
   "description": "",
   "main": "LoginServer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "node LoginServer.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Efeyanik/SeyahatDeneyim.git"
