@@ -1,0 +1,488 @@
+[
+  {
+    "id": 1,
+    "name": "Adana",
+    "image_url": "/assets/images/cities/1.jpg",
+    "description": "Akdeniz Bölgesi'nde Seyhan Nehri'nin bereketli toprakları üzerinde yükselen Adana, sıcakkanlı ve samimi insanlarıyla tanınır. Dünyaca ünlü Adana kebabı, şalgam suyu, şırdan ve bici bici tatlısı mutfağının vazgeçilmezleridir. Şehrin simgeleri arasında Roma döneminden kalma tarihi Taşköprü, heybetli Sabancı Merkez Camii, Büyük Saat Kulesi ve Varda Köprüsü yer alır."
+  },
+  {
+    "id": 2,
+    "name": "Adıyaman",
+    "image_url": "/assets/images/cities/2.jpg",
+    "description": "Güneydoğu Anadolu'nun köklü tarihiyle öne çıkan şehri Adıyaman, UNESCO Dünya Mirası listesinde yer alan Nemrut Dağı ve devasa heykelleriyle tüm dünyadan turist çeker. Etsiz çiğ köftesi ve hıtap gibi yöresel lezzetleriyle damak çatlatır. Cendere Köprüsü, Karakuş Tümülüsü ve Perre Antik Kenti şehrin en önemli tarihi yapıları arasındadır."
+  },
+  {
+    "id": 3,
+    "name": "Afyonkarahisar",
+    "image_url": "/assets/images/cities/3.jpg",
+    "description": "Ege, İç Anadolu ve Akdeniz bölgelerinin kesişim noktasında bulunan Afyonkarahisar, termal kaplıcaları ve sağlık turizmiyle ünlüdür. Coğrafi işaretli Afyon sucuğu, kaymağı ve lokumu gastronomi tutkunlarını cezbeder. Şehrin ortasında volkanik bir kaya kütlesi üzerinde yükselen Karahisar Kalesi ve Frig Vadisi en popüler turistik noktalarıdır."
+  },
+  {
+    "id": 4,
+    "name": "Ağrı",
+    "image_url": "/assets/images/cities/4.jpg",
+    "description": "Türkiye'nin en yüksek noktası olan efsanevi Ağrı Dağı'na ev sahipliği yapan şehir, sert karasal iklimi ve sarp coğrafyasıyla bilinir. Osmanlı mimarisinin Anadolu'daki en nadide örneklerinden olan İshak Paşa Sarayı, büyüleyici yapısıyla Doğubayazıt'ta yer alır. Yöresel mutfağında Abdigör köftesi ve beyaz bal öne çıkar."
+  },
+  {
+    "id": 5,
+    "name": "Amasya",
+    "image_url": "/assets/images/cities/5.jpg",
+    "description": "Yeşilırmak'ın ortasından geçtiği, sarp kayalıkların arasına gizlenmiş bu masalsı şehir, Osmanlı döneminde şehzadelerin eğitim gördüğü 'Şehzadeler Şehri' olarak anılır. Geleneksel ahşap Yalıboyu Evleri, Pontus krallarına ait Kral Kaya Mezarları ve sulu, mis kokulu misket elması Amasya'nın en bilinen özellikleridir."
+  },
+  {
+    "id": 6,
+    "name": "Ankara",
+    "image_url": "/assets/images/cities/6.jpg",
+    "description": "Türkiye Cumhuriyeti'nin başkenti ve kalbi olan Ankara, İç Anadolu'nun bozkırlarında memur ve öğrenci şehri kültürüyle yoğrulmuştur. Ulu Önder Mustafa Kemal Atatürk'ün ebedi istirahatgahı Anıtkabir, tarihi Ankara Kalesi ve Kocatepe Camii şehrin silüetini oluşturur. Ankara simidi, tiftik keçisi ve Ankara döneri kültürel mirasları arasındadır."
+  },
+  {
+    "id": 7,
+    "name": "Antalya",
+    "image_url": "/assets/images/cities/7.jpg",
+    "description": "Toros Dağları ile Akdeniz'in masmavi suları arasına kurulan Antalya, Türkiye'nin tartışmasız turizm başkentidir. Düden ve Kurşunlu şelaleleri, tarihi Kaleiçi sokakları, Aspendos ve Olympos gibi antik kentleri ile hem doğa hem tarih sunar. Sıcakkanlı Yörük kültürünün izlerini taşıyan şehirde tahinli piyaz ve yanık dondurma meşhurdur."
+  },
+  {
+    "id": 8,
+    "name": "Artvin",
+    "image_url": "/assets/images/cities/8.jpg",
+    "description": "Doğu Karadeniz'in en uç noktasında, sarp dağlar ve derin vadilerle çevrili Artvin, yeşilin her tonunu barındıran bakir doğasıyla bir cennettir. Kaçkar Dağları, Borçka Karagöl ve Çoruh Nehri doğa tutkunları için vazgeçilmezdir. Misafirperver insanları, hinkal mantısı ve Kafkasör yayla şenlikleri bölge kültürünü yansıtır."
+  },
+  {
+    "id": 9,
+    "name": "Aydın",
+    "image_url": "/assets/images/cities/9.jpg",
+    "description": "Evliya Çelebi'nin 'Dağlarından yağ, ovalarından bal akar' diyerek övdüğü Aydın, zeytinyağı ve dünyaca ünlü sarı lop inciriyle bereketli bir Ege şehridir. Efeler diyarı olarak bilinen şehirde zeybek kültürü hakimdir. Kuşadası ve Didim gibi tatil beldelerinin yanı sıra Afrodisias ve Tralles antik kentlerine ev sahipliği yapar."
+  },
+  {
+    "id": 10,
+    "name": "Balıkesir",
+    "image_url": "/assets/images/cities/10.jpg",
+    "description": "Hem Marmara hem de Ege Denizi'ne kıyısı olan Balıkesir, geniş ormanları ve zeytinlikleriyle oksijen deposu Kaz Dağları'na (İda) ev sahipliği yapar. Cunda Adası, Ayvalık tostu, köpüklü Susurluk ayranı ve höşmerim tatlısı ünlüdür. Kuvayi Milliye ruhunu taşıyan şehir, tarihi dokusunu günümüzde de korumaktadır."
+  },
+  {
+    "id": 11,
+    "name": "Bilecik",
+    "image_url": "/assets/images/cities/11.jpg",
+    "description": "Osmanlı İmparatorluğu'nun temellerinin atıldığı, taşı mermer, toprağı seramik olan tarihi bir vadi şehridir. Ertuğrul Gazi Türbesi ve Şeyh Edebali Türbesi inanç ve tarih turizminin merkezleridir. Çömlek kebabı ve bıldırcın kebabı yörenin sevilen lezzetleri arasındadır."
+  },
+  {
+    "id": 12,
+    "name": "Bingöl",
+    "image_url": "/assets/images/cities/12.jpg",
+    "description": "Doğu Anadolu Bölgesi'nde, yüksek dağlar ve buzul gölleriyle çevrili Bingöl, adını efsanevi soğuk su kaynaklarından alır. Doğanın mucizesi olan Yüzen Adalar, Çır Şelalesi ve sülfatsız organik Bingöl balı şehrin en büyük değerleridir. Sert kış iklimine rağmen insanı son derece sıcaktır."
+  },
+  {
+    "id": 13,
+    "name": "Bitlis",
+    "image_url": "/assets/images/cities/13.jpg",
+    "description": "Van Gölü havzasında, tarihi Beş Minaresi ile türkülere konu olan Bitlis, kışların çetin geçtiği kadim bir şehirdir. Dünyanın en büyük İslam mezarlığı olan Ahlat Selçuklu Mezarlığı ve Nemrut Krater Gölü benzersizdir. Kuyularda saatlerce pişirilen büryan kebabı şehrin en meşhur yemeğidir."
+  },
+  {
+    "id": 14,
+    "name": "Bolu",
+    "image_url": "/assets/images/cities/14.jpg",
+    "description": "Yüzde altmışı ormanlarla kaplı olan Bolu; Abant, Gölcük ve Yedigöller gibi doğa harikalarıyla dört mevsim kartpostallık manzaralar sunar. Osmanlı saray mutfağına uzanan köklü aşçılık geleneğiyle Mengen aşçıları dünyaca ünlüdür. Dağlık coğrafyası, huzurlu yapısı ve doğa turizmiyle öne çıkar."
+  },
+  {
+    "id": 15,
+    "name": "Burdur",
+    "image_url": "/assets/images/cities/15.jpg",
+    "description": "Göller Yöresi'nin kalbinde yer alan Burdur, Türkiye'nin Maldivleri olarak bilinen beyaz kumsallı Salda Gölü'ne ev sahipliği yapar. Antik dönemin en önemli şehirlerinden Sagalassos Antik Kenti büyüleyicidir. Teke yöresi kültürünün yaşatıldığı şehirde Burdur şiş ve ceviz ezmesi mutlaka denenmelidir."
+  },
+  {
+    "id": 16,
+    "name": "Bursa",
+    "image_url": "/assets/images/cities/16.jpg",
+    "description": "Osmanlı Devleti'nin ilk başkenti olan 'Yeşil Bursa', Uludağ'ın eteklerinde hanlar, hamamlar ve türbelerle dolu mistik bir şehirdir. Kış turizminin merkezi olan Uludağ'ın yanı sıra Cumalıkızık gibi tarihi köyleriyle UNESCO listesindedir. İskender kebap, kestane şekeri ve İnegöl köfte şehrin gastronomik imzalarıdır."
+  },
+  {
+    "id": 17,
+    "name": "Çanakkale",
+    "image_url": "/assets/images/cities/17.jpg",
+    "description": "Marmara ile Ege'yi birbirine bağlayan rüzgarlı boğazı, Gelibolu Yarımadası'ndaki destansı Çanakkale Şehitliği ve antik Truva Atı efsanesiyle bir tarih anıtıdır. Bozcaada ve Gökçeada gibi popüler turizm adalarına sahiptir. Peynir helvası ve ezine peyniri yörenin en sevilen tatlarıdır."
+  },
+  {
+    "id": 18,
+    "name": "Çankırı",
+    "image_url": "/assets/images/cities/18.jpg",
+    "description": "İç Anadolu'nun kuzeyinde yer alan Çankırı, Hititlerden günümüze kalan ve devasa bir yeraltı şehri olan Tuz Mağarası ile ünlüdür. Anadolu'nun ahilik geleneğinden gelen 'Yaran Kültürü'nün başkentidir. Taş Mescit ve Ilgaz Dağları Milli Parkı görülmesi gereken yerlerin başındadır."
+  },
+  {
+    "id": 19,
+    "name": "Çorum",
+    "image_url": "/assets/images/cities/19.jpg",
+    "description": "Dünyanın merkezine yakınlığıyla esprilere konu olan Çorum, aslında Hitit İmparatorluğu'nun başkenti Hattuşa'ya ev sahipliği yapan görkemli bir antik merkezdir. Leblebisi tüm dünyada tanınır. İskilip dolması ve sırık kebabı mutfağının incilerindendir. Tarihi Saat Kulesi şehrin sembolüdür."
+  },
+  {
+    "id": 20,
+    "name": "Denizli",
+    "image_url": "/assets/images/cities/20.jpg",
+    "description": "Dünyada eşi benzeri olmayan beyaz Pamukkale travertenleri ve hemen yanındaki Hierapolis Antik Kenti ile Ege Bölgesi'nin turizm merkezlerinden biridir. Tekstil ve dokuma sanayisinde Türkiye'nin lokomotifidir. Sabahın erken saatlerinde yenilen tandır ateşindeki Denizli kebabı ve meşhur Denizli horozu şehrin simgelerindendir."
+  },
+  {
+    "id": 21,
+    "name": "Diyarbakır",
+    "image_url": "/assets/images/cities/21.jpg",
+    "description": "Dicle Nehri'nin kıyısında, Çin Seddi'nden sonra dünyanın en uzun ve sağlam surlarından olan tarihi Diyarbakır Surları ve Hevsel Bahçeleri'yle UNESCO mirasıdır. Farklı medeniyetlerin izlerini taşıyan şehrin insanları son derece misafirperverdir. Devasa karpuzu, ciğer kebabı, burma kadayıfı ve Hasan Paşa Hanı'ndaki kahvaltı kültürü meşhurdur."
+  },
+  {
+    "id": 22,
+    "name": "Edirne",
+    "image_url": "/assets/images/cities/22.jpg",
+    "description": "Osmanlı'nın İstanbul'dan önceki başkenti, Mimar Sinan'ın 'ustalık eserim' dediği muazzam Selimiye Camii'nin ev sahibidir. Meriç, Tunca ve Arda nehirlerinin kesiştiği bu sınır şehri, her yıl düzenlenen tarihi Kırkpınar Yağlı Güreşleri ile geleneklerini yaşatır. İnce dilimlenmiş Edirne tava ciğeri ve badem ezmesi eşsizdir."
+  },
+  {
+    "id": 23,
+    "name": "Elazığ",
+    "image_url": "/assets/images/cities/23.jpg",
+    "description": "Doğu Anadolu'da üç tarafı sularla çevrili bir yarımada görünümünde olan Elazığ, tarihi Harput Antik Kenti'nin mirasçısıdır. Gakkoşlar diyarı olarak bilinen şehirde Çayda Çıra oyunu ve Kürsübaşı etkinlikleri kültürün temelidir. Harput köftesi, orcik (cevizli sucuk) ve Hazar Gölü bölgenin en önemli değerleridir."
+  },
+  {
+    "id": 24,
+    "name": "Erzincan",
+    "image_url": "/assets/images/cities/24.jpg",
+    "description": "Tarihi İpek Yolu üzerinde yer alan Erzincan, Doğu Anadolu'nun düz ve verimli ovalarından birine kurulmuştur. Heybetli Munzur Dağları, doğa harikası Karanlık Kanyon ve Girlevik Şelalesi doğa sporları için idealdir. Bakır işlemeciliği sanatıyla ve eşsiz lezzetteki Erzincan tulum peyniriyle tanınır."
+  },
+  {
+    "id": 25,
+    "name": "Erzurum",
+    "image_url": "/assets/images/cities/25.jpg",
+    "description": "Milli Mücadele'nin temellerinin atıldığı, yılın büyük bölümü karlar altında kalan bu heybetli şehir, Palandöken Kayak Merkezi ile kış turizminin kalbidir. Mertliği ve dürüstlüğüyle bilinen Dadaş kültürünün yurdudur. Çifte Minareli Medrese gibi Selçuklu eserleri ile yatık döner olarak bilinen meşhur Cağ Kebabı ve kadayıf dolması şehrin gururudur."
+  },
+  {
+    "id": 26,
+    "name": "Eskişehir",
+    "image_url": "/assets/images/cities/26.jpg",
+    "description": "Porsuk Çayı etrafında şekillenen modern şehircilik anlayışı, gondolları ve köprüleriyle 'Anadolu'nun Venedik'i' olarak anılır. Dinamik ve canlı bir öğrenci şehridir. Tarihi Odunpazarı Evleri, lületaşı işlemeciliği, Sazova Parkı ve Tatar kültüründen miras kalan çıtır çiğ böreği ile İç Anadolu'nun en popüler turistik rotalarındandır."
+  },
+  {
+    "id": 27,
+    "name": "Gaziantep",
+    "image_url": "/assets/images/cities/27.jpg",
+    "description": "Kurtuluş Savaşı'ndaki kahramanlıklarıyla 'Gazi' unvanı alan şehir, UNESCO Yaratıcı Şehirler Ağı'na dahil olmuş bir dünya gastronomi başkentidir. Baklavası, beyranı, fıstığı ve yüzlerce çeşit yemeğiyle gurmelerin rotasıdır. Çingene Kızı mozaiğine ev sahipliği yapan Zeugma Mozaik Müzesi ve tarihi Bakırcılar Çarşısı görülmeye değerdir."
+  },
+  {
+    "id": 28,
+    "name": "Giresun",
+    "image_url": "/assets/images/cities/28.jpg",
+    "description": "Karadeniz'in tek adasına (Giresun Adası) sahip, fındığın ve kirazın anavatanı olarak bilinen yeşil sahil şehridir. Mavi ile yeşilin kucaklaştığı Kümbet ve Bektaş yaylaları, deniz manzaralı Giresun Kalesi ile öne çıkar. Görele pidesi ve karalahana sarması mutfağının demirbaşlarıdır."
+  },
+  {
+    "id": 29,
+    "name": "Gümüşhane",
+    "image_url": "/assets/images/cities/29.jpg",
+    "description": "Tarihi İpek Yolu üzerinde, sarp Zigana Dağları'nın eteklerine kurulan Gümüşhane, adını eski gümüş madenlerinden alır. Astıma iyi geldiği bilinen damlataş oluşumlu Karaca Mağarası ve tarihi Süleymaniye Mahallesi önemli noktalarıdır. Küme ve pestil üretiminde Türkiye'nin başkenti konumundadır."
+  },
+  {
+    "id": 30,
+    "name": "Hakkari",
+    "image_url": "/assets/images/cities/30.jpg",
+    "description": "Türkiye'nin en güneydoğu ucunda, yüksek rakımlı sarp dağlar, derin vadiler ve Zap Suyu ile çevrili zorlu ama büyüleyici bir coğrafyaya sahiptir. Doğal güzellikleri bozulmamış olan Cilo Buzulları, Sümbül Dağı ve endemik Ters Lale çiçeğiyle meşhurdur."
+  },
+  {
+    "id": 31,
+    "name": "Hatay",
+    "image_url": "/assets/images/cities/31.jpg",
+    "description": "Cami, kilise ve havranın yan yana durduğu, farklı dinlerin ve kültürlerin barış içinde yaşadığı bir 'Hoşgörü ve Medeniyetler Şehri'dir. UNESCO tescilli mutfağında çıtır künefe, tepsi kebabı ve kağıt kebabı başı çeker. Dünyanın en büyük mozaik müzelerinden biri, Titus Tüneli ve Uzun Çarşı'ya ev sahipliği yapar."
+  },
+  {
+    "id": 32,
+    "name": "Isparta",
+    "image_url": "/assets/images/cities/32.jpg",
+    "description": "Göller Yöresi'nde yer alan Isparta, uçsuz bucaksız gül ve lavanta bahçeleriyle 'Gül Şehri' olarak bilinir ve kozmetik sanayisinin merkezidir. Eğirdir Gölü'nün turkuaz suları ve el dokuması Isparta halılarıyla meşhurdur. Fırın kebabı ve gül lokumu yörenin sevilen lezzetlerindendir."
+  },
+  {
+    "id": 33,
+    "name": "Mersin",
+    "image_url": "/assets/images/cities/33.jpg",
+    "description": "Akdeniz'in en uzun sahil şeritlerinden birine ve Türkiye'nin en büyük limanına sahip olan sıcak bir sahil şehridir. Palmiyeli yolları, Kızkalesi, Cennet-Cehennem Mağaraları ve Kanlıdivane gibi antik kalıntılarıyla tarih ve deniz turizmini harmanlar. Lavaş arası ince doğranmış etten yapılan tantunisi ve cezeryesi efsanedir."
+  },
+  {
+    "id": 34,
+    "name": "İstanbul",
+    "image_url": "/assets/images/cities/34.jpg",
+    "description": "Avrupa ve Asya'yı birbirine bağlayan boğazı, yedi tepesi ve binlerce yıllık tarihiyle imparatorluklara başkentlik yapmış dünya şehridir. Ayasofya, Sultanahmet, Galata Kulesi ve Kapalıçarşı gibi eşsiz yapılara sahiptir. Bitmeyen enerjisi, martı sesleri eşliğinde yenen balık ekmeği ve vapurlarıyla her sokağı ayrı bir şiirdir."
+  },
+  {
+    "id": 35,
+    "name": "İzmir",
+    "image_url": "/assets/images/cities/35.jpg",
+    "description": "Ege'nin incisi İzmir, palmiyeli kordon boyu, tarihi Konak Saat Kulesi ve özgürlükçü, rahat insanlarıyla bilinir. Dünyanın en büyük antik kentlerinden Efes'e ve Şirince köyüne ev sahipliği yapar. Sabahları taze boyoz ve gevrek yeme kültürü, kumru ve İzmir köftesiyle sıcak bir Akdeniz rüyasıdır."
+  },
+  {
+    "id": 36,
+    "name": "Kars",
+    "image_url": "/assets/images/cities/36.jpg",
+    "description": "Geniş caddeleri ve Baltık mimarisi taş binalarıyla Türkiye'nin en özgün mimarili şehirlerinden biridir. Kışın donan Çıldır Gölü üzerinde atlı kızak yapmak ve Sarıkamış'ın kristal karlarında kaymak popülerdir. Ermeniistan sınırındaki görkemli Ani Harabeleri ile meşhur kaz eti ve Kars gravyer peyniri şehrin vazgeçilmezidir."
+  },
+  {
+    "id": 37,
+    "name": "Kastamonu",
+    "image_url": "/assets/images/cities/37.jpg",
+    "description": "Karadeniz'in yemyeşil ormanlarına ve kış sporlarıyla ünlü Ilgaz Dağları'na yaslanan, İstiklal Madalyalı bir şehirdir. Geleneksel sivil mimarinin en güzel örneklerinden olan ahşap konakları ile dikkat çeker. Taşköprü sarımsağı, pastırması, kuyu kebabı ve etli ekmeği mutfağının en güçlü temsilcileridir."
+  },
+  {
+    "id": 38,
+    "name": "Kayseri",
+    "image_url": "/assets/images/cities/38.jpg",
+    "description": "İç Anadolu'da heybetli Erciyes Dağı'nın eteklerine kurulan, köklü ticari zekası ve girişimci insanlarıyla bilinen bir sanayi merkezidir. Bir kaşığa kırk tane sığdığı söylenen incecik mantısı, çemenli pastırması ve sucuğu ile gastronomi dünyasında taht kurmuştur. Kapalı Çarşısı ve Selçuklu mimarisi eserleriyle zengindir."
+  },
+  {
+    "id": 39,
+    "name": "Kırklareli",
+    "image_url": "/assets/images/cities/39.jpg",
+    "description": "Trakya'nın Karadeniz'e kıyısı olan bu neşeli şehri, Avrupa'nın en büyük subasar (longoz) ormanı olan İğneada'ya ev sahipliği yapar. Dupnisa Mağarası ve geniş ayçiçeği tarlalarıyla doğa ile iç içedir. Trakya kültürünün eğlenceli yapısını yansıtan şehirde hardaliye içeceği ve Kırklareli köftesi çok sevilir."
+  },
+  {
+    "id": 40,
+    "name": "Kırşehir",
+    "image_url": "/assets/images/cities/40.jpg",
+    "description": "Bozkırın tezenesi Neşet Ertaş'ın memleketi olan Kırşehir, Anadolu abdallık ve bozlak kültürünün merkezidir. Ahilik teşkilatının kurucusu Ahi Evran'ın türbesi ve dünyanın ilk astronomi okullarından olan Cacabey Medresesi buradadır. Kaman cevizi ve höşmerim tatlısı ünlüdür."
+  },
+  {
+    "id": 41,
+    "name": "Kocaeli",
+    "image_url": "/assets/images/cities/41.jpg",
+    "description": "İstanbul'un komşusu olan Kocaeli, Türkiye'nin en büyük sanayi tesislerini barındıran dev bir endüstri merkezidir. Ancak sanayinin ardında Kartepe Kayak Merkezi, Sapanca Gölü kıyıları ve Maşukiye gibi ormanlık dinlenme alanlarını gizler. Şehrin tatlı simgesi ise ağızda dağılan İzmit pişmaniyesidir."
+  },
+  {
+    "id": 42,
+    "name": "Konya",
+    "image_url": "/assets/images/cities/42.jpg",
+    "description": "Türkiye'nin yüzölçümü en büyük ili olan Konya, geniş ovaları ve buğday tarlalarıyla ülkenin tahıl ambarıdır. Mevlana Celaleddin Rumi'nin türbesiyle hoşgörü ve tasavvufun dünya çapındaki merkezidir. İnsanlık tarihinin ilk yerleşimlerinden Çatalhöyük burada bulunur. Etli ekmek, fırın kebabı ve bamya çorbası kült lezzetlerindendir."
+  },
+  {
+    "id": 43,
+    "name": "Kütahya",
+    "image_url": "/assets/images/cities/43.jpg",
+    "description": "Toprağın sanatla buluştuğu Kütahya, çini ve porselen üretiminde Türkiye'nin başkenti ve UNESCO Yaratıcı Şehirler Ağı üyesidir. Roma döneminden kalma, dünyanın ilk borsasının bulunduğu Aizanoi Antik Kenti büyük önem taşır. Termal kaynakları bol olan şehirde cimcik mantısı meşhurdur."
+  },
+  {
+    "id": 44,
+    "name": "Malatya",
+    "image_url": "/assets/images/cities/44.jpg",
+    "description": "Dünya kuru kayısı üretiminin büyük bölümünü karşılayan Malatya, Fırat Nehri'nin bereketlendirdiği eski bir medeniyet merkezidir. Tarihi Arslantepe Höyüğü ile UNESCO listesine girmiştir. Samimi ve sıcakkanlı insanlara sahip şehirde kağıt kebabı, kiraz yaprağı sarması ve kayısı tatlısı öne çıkar."
+  },
+  {
+    "id": 45,
+    "name": "Manisa",
+    "image_url": "/assets/images/cities/45.jpg",
+    "description": "Spil Dağı'nın eteklerine kurulan, Osmanlı şehzadelerinin sancakbeyliği yaptığı tarihi 'Şehzadeler Şehri'dir. Her bahar şifa niyetine halka saçılan, 41 çeşit baharattan yapılan Mesir Macunu Festivali ile bilinir. Sultaniye üzümü ve Manisa kebabı şehrin en popüler yöresel ürünleridir."
+  },
+  {
+    "id": 46,
+    "name": "Kahramanmaraş",
+    "image_url": "/assets/images/cities/46.jpg",
+    "description": "Kurtuluş Savaşı'ndaki sivil direnişiyle 'Kahraman' unvanı alan, edebiyatımızda 'Yedi Güzel Adam'ın yetiştiği köklü bir şehirdir. Keçi sütü ve salep orkidesiyle yapılan, bıçakla kesilen Maraş dövme dondurması dünyaca ünlüdür. Maraş tarhanası ve eli böğründe yemeği de mutfağının incilerindendir."
+  },
+  {
+    "id": 47,
+    "name": "Mardin",
+    "image_url": "/assets/images/cities/47.jpg",
+    "description": "Gündüzü seyranlık, gecesi gerdanlık olarak tanımlanan Mardin, Mezopotamya ovasına bakan taş evleriyle açık hava müzesi gibidir. Süryani, Arap ve Kürt kültürlerinin bir arada yaşadığı masalsı sokaklara sahiptir. Darülzafaran Manastırı, telkari gümüş işlemeciliği, kaburga dolması ve Süryani şarabı şehrin karakterini oluşturur."
+  },
+  {
+    "id": 48,
+    "name": "Muğla",
+    "image_url": "/assets/images/cities/48.jpg",
+    "description": "Türkiye'nin en uzun sahil şeridine sahip olan Muğla; Bodrum, Marmaris, Fethiye ve Datça gibi dünyaca ünlü turizm cennetlerini sınırlarında barındırır. Ölüdeniz, Saklıkent Kanyonu ve çam balı ile ünlüdür. Yörük kültürünün etkisindeki mutfağında deniz ürünleri, zeytinyağlı ot kavurmaları ve çökertme kebabı ön plandadır."
+  },
+  {
+    "id": 49,
+    "name": "Muş",
+    "image_url": "/assets/images/cities/49.jpg",
+    "description": "Anadolu'nun kapılarının Türklere açıldığı 1071 Malazgirt Meydan Muharebesi'ne ev sahipliği yapan tarihi geniş ovanın şehridir. Kışları uzun ve bol kar yağışlı geçer, baharda ise endemik Muş Lalesi ovaları kırmızıya boyar. Murat Köprüsü ve Muş köftesi yörenin değerleri arasındadır."
+  },
+  {
+    "id": 50,
+    "name": "Nevşehir",
+    "image_url": "/assets/images/cities/50.jpg",
+    "description": "Volkanik tüflerin rüzgar ve suyla aşınması sonucu oluşan masalsı Kapadokya bölgesinin merkezidir. Peribacaları, sıcak hava balonları, kayalara oyulmuş kiliseleri ve Derinkuyu gibi devasa yeraltı şehirleriyle dünya harikasıdır. Çanak çömlek atölyeleriyle Avanos, lezzetli testi kebabı ve şaraplık üzümleriyle turistlerin gözdesidir."
+  },
+  {
+    "id": 51,
+    "name": "Niğde",
+    "image_url": "/assets/images/cities/51.jpg",
+    "description": "İç Anadolu'da, dağcılık tutkunlarının 'Anadolu'nun Alpleri' olarak adlandırdığı Aladağlar Milli Parkı'na ev sahipliği yapar. Elma bahçeleri ve patates üretimiyle ekonomisi tarıma dayalıdır. Tarihi Roma Havuzu, Niğde Kalesi ve Niğde tavası şehrin en bilinen özellikleridir."
+  },
+  {
+    "id": 52,
+    "name": "Ordu",
+    "image_url": "/assets/images/cities/52.jpg",
+    "description": "Karadeniz'in yeşiliyle mavisinin en güzel karıştığı, oksijen deposu yaylalara sahip sakin bir sahil şehridir. Teleferikle çıkılan Boztepe'den eşsiz bir şehir ve deniz manzarası sunar. Fındık ve kivi üretiminde liderdir, ayrıca sucuklu Ordu tostu ve pidesi çok sevilir."
+  },
+  {
+    "id": 53,
+    "name": "Rize",
+    "image_url": "/assets/images/cities/53.jpg",
+    "description": "Türkiye'nin en çok yağış alan, yamaçları yemyeşil çay bahçeleriyle kaplı doğa harikası Karadeniz şehridir. Ayder Yaylası, Fırtına Deresi üzerinde yapılan rafting ve Zilkale turistlerin favorisidir. Pratik zekalı ve neşeli insanlara sahip olan şehirde muhlama (kuymak) ve Rize kavurması baş tacıdır."
+  },
+  {
+    "id": 54,
+    "name": "Sakarya",
+    "image_url": "/assets/images/cities/54.jpg",
+    "description": "Marmara Bölgesi'nin hızla gelişen, Sakarya Nehri'nin suladığı verimli tarım arazilerine ve göllere sahip şehridir. Doğayla iç içe Sapanca ve Poyrazlar gölleri hafta sonu kaçamaklarının adresidir. Kemiği alınmış et suyuna batırılmış ekmekle servis edilen meşhur ıslama köftesi ve kabak tatlısı en bilinen lezzetleridir."
+  },
+  {
+    "id": 55,
+    "name": "Samsun",
+    "image_url": "/assets/images/cities/55.jpg",
+    "description": "Mustafa Kemal Atatürk'ün 19 Mayıs 1919'da Bandırma Vapuru ile ayak basarak Milli Mücadele'yi başlattığı bağımsızlık şehridir. Karadeniz'in en büyük kentlerinden biri olan Samsun, geniş Kızılırmak Deltası Kuş Cenneti'ne sahiptir. Bafra ve Terme pideleri ile Samsun simidi mutfağının incileridir."
+  },
+  {
+    "id": 56,
+    "name": "Siirt",
+    "image_url": "/assets/images/cities/56.jpg",
+    "description": "Güneydoğu Anadolu'da, Botan Vadisi'nin dik yamaçlarına kurulu, tarihi ve kültürel dokusuyla öne çıkan bir şehirdir. Veysel Karani Hazretleri Türbesi ile inanç turizminde önemlidir. Fıstığı, Pervari balı, yöresel battaniyeleri ve tandırda saatlerce pişen enfes büryan kebabı ile bilinir."
+  },
+  {
+    "id": 57,
+    "name": "Sinop",
+    "image_url": "/assets/images/cities/57.jpg",
+    "description": "Türkiye'nin en kuzey ucu olan İnceburun'a ev sahipliği yapan, trafik lambasının bulunmadığı, TÜİK verilerine göre 'Türkiye'nin en mutlu insanlarının' yaşadığı sakin liman şehridir. Şiirlere konu olan tarihi Sinop Cezaevi, Erfelek Şelaleleri ve cevizli-sarımsaklı meşhur Sinop mantısı şehrin simgeleridir."
+  },
+  {
+    "id": 58,
+    "name": "Sivas",
+    "image_url": "/assets/images/cities/58.jpg",
+    "description": "Anadolu'nun merkezinde, Selçuklu mimarisinin zirvesi kabul edilen ve UNESCO listesinde olan Divriği Ulu Camii'ni barındıran geniş coğrafyalı şehirdir. Sivas Kongresi'ne ev sahipliği yapmış olup tarihi Çifte Minareli Medrese ile dikkat çeker. Sadık Kangal köpekleri, madımak yemeği ve Sivas köftesi ile ünlüdür."
+  },
+  {
+    "id": 59,
+    "name": "Tekirdağ",
+    "image_url": "/assets/images/cities/59.jpg",
+    "description": "Marmara Denizi kıyısında, uçsuz bucaksız sarı ayçiçeği tarlaları ve üzüm bağlarıyla çevrili Trakya'nın şirin şehridir. Macar prensine ev sahipliği yapan Rakoczi Müzesi önemli tarihi noktalarındandır. Namık Kemal'in memleketi olan şehir, meşhur Tekirdağ köftesi ve peynir tatlısı (hayrabolu) ile midelere şenlik yaşatır."
+  },
+  {
+    "id": 60,
+    "name": "Tokat",
+    "image_url": "/assets/images/cities/60.jpg",
+    "description": "Yeşilırmak havzasında, tarihi Taşhan'ı, ahşap el baskısı yazmacılık sanatı ve eski konaklarıyla Anadolu'nun geleneksel dokusunu koruyan bir şehirdir. Astıma iyi gelen Ballıca Mağarası önemli bir doğa harikasıdır. Şişe dizilen et, sarımsak, patlıcan ve patatesin fırında pişmesiyle yapılan efsanevi Tokat kebabı çok meşhurdur."
+  },
+  {
+    "id": 61,
+    "name": "Trabzon",
+    "image_url": "/assets/images/cities/61.jpg",
+    "description": "Karadeniz'in sarp kayalıklarına tutunmuş, Sümela Manastırı ve Uzungöl gibi doğa ve tarih şaheserlerine ev sahipliği yapan köklü bir liman şehridir. Futbola ve kemençeye olan tutkulu insanlarıyla bilinir. Mıhlama (kuymak), Akçaabat köftesi, Hamsiköy sütlacı ve Trabzon ekmeği bölge mutfağının temel taşlarıdır."
+  },
+  {
+    "id": 62,
+    "name": "Tunceli",
+    "image_url": "/assets/images/cities/62.jpg",
+    "description": "Munzur Dağları ve tertemiz akan Munzur Çayı'nın şekillendirdiği derin vadilerle çevrili, eğitim seviyesi çok yüksek doğa harikası bir şehirdir. Alevi-Bektaşi kültürünün ve inanç merkezlerinin yoğun olduğu hoşgörü kentidir. Şavak peyniri, dağ sarımsağı ve Zerefet yemeği yöresel değerleridir."
+  },
+  {
+    "id": 63,
+    "name": "Şanlıurfa",
+    "image_url": "/assets/images/cities/63.jpg",
+    "description": "Tarihin sıfır noktası olarak kabul edilen ve ezber bozan Göbeklitepe'yi sınırlarında barındıran efsaneler ve peygamberler şehridir. İbrahim Peygamber'in ateşe atıldığına inanılan Balıklıgöl mistik bir atmosfere sahiptir. Geleneksel sıra geceleri, çiğ köftesi, lahmacunu ve ciğer kebabı ile Güneydoğu'nun kalbidir."
+  },
+  {
+    "id": 64,
+    "name": "Uşak",
+    "image_url": "/assets/images/cities/64.jpg",
+    "description": "Ege ve İç Anadolu arasında geçiş güzergahında bulunan Uşak, dünyanın en büyük ikinci kanyonu olan Ulubey Kanyonu'na ve tarihi Karun Hazineleri'ne ev sahipliği yapar. İlkler şehri olarak bilinen Uşak, battaniye dokumacılığında öncüdür. Meşhur Uşak tarhanası ve demir tatlısı sofraları süsler."
+  },
+  {
+    "id": 65,
+    "name": "Van",
+    "image_url": "/assets/images/cities/65.jpg",
+    "description": "Türkiye'nin en büyük gölüne (Van Gölü) sahip, tarihi Urartulara dayanan, kalesi ve iki farklı göz rengine sahip sevimli Van kedisiyle meşhur Doğu Anadolu şehridir. Göl üzerindeki adada bulunan tarihi Akdamar Kilisesi turistlerin ilgi odağıdır. Onlarca çeşit yöresel peynir ve balın sunulduğu Van Kahvaltısı dünyaca ünlüdür."
+  },
+  {
+    "id": 66,
+    "name": "Yozgat",
+    "image_url": "/assets/images/cities/66.jpg",
+    "description": "İç Anadolu'nun tam ortasında, geniş Bozok Yaylası üzerinde kurulu, Türkiye'nin ilk milli parkı olan Çamlık Milli Parkı'na ev sahipliği yapan şehirdir. Tarihi Saat Kulesi ve Çeşka Yeraltı Şehri görülmeye değerdir. Testi kebabı ve arabaşı çorbası kış aylarının vazgeçilmez yöresel tatlarıdır."
+  },
+  {
+    "id": 67,
+    "name": "Zonguldak",
+    "image_url": "/assets/images/cities/67.jpg",
+    "description": "Kara elmas olarak bilinen kömür madenleri ve madenci kültürüyle şekillenmiş, Karadeniz'in sarp yamaçlarına kurulu emekçi bir sahil şehridir. Astım hastalarının uğrak noktası olan Gökgöl Mağarası ve tarihi Filyos Antik Kenti dikkat çeker. El işçiliğiyle üretilen meşhur Devrek bastonu şehrin kültürel sembolüdür."
+  },
+  {
+    "id": 68,
+    "name": "Aksaray",
+    "image_url": "/assets/images/cities/68.jpg",
+    "description": "Kapadokya bölgesinin batı kapısı olan Aksaray, sarp kayalıkların ortasından Melendiz Çayı'nın aktığı, sayısız kilise barındıran Ihlara Vadisi ile büyüleyici bir doğaya sahiptir. Selçuklu eseri Sultanhanı Kervansarayı ve eğimiyle dikkat çeken Eğri Minare görülmeye değerdir. Şepit yemeği ve Aksaray malaklaması köpeği meşhurdur."
+  },
+  {
+    "id": 69,
+    "name": "Bayburt",
+    "image_url": "/assets/images/cities/69.jpg",
+    "description": "Çoruh Nehri'nin ortasından geçtiği, tarihi Bayburt Kalesi'nin gölgesinde yaşayan, Türkiye'nin nüfusu en az ama kültürel bağları en güçlü illerinden biridir. Geleneksel dokuyu çağdaş sanatla buluşturan ve dağın başında yer alan Baksı Müzesi uluslararası ödüle sahiptir. Lor dolması ve tatlı çorba yöresel mutfağın öne çıkanlarındandır."
+  },
+  {
+    "id": 70,
+    "name": "Karaman",
+    "image_url": "/assets/images/cities/70.jpg",
+    "description": "Karamanoğlu Mehmet Bey'in Türkçeyi resmi dil ilan ettiği, geniş tarım ovalarına sahip Türk dilinin başkentidir. Karaman Kalesi, Binbir Kilise ve Hatuniye Medresesi tarihi zenginliklerindendir. Koyunu ile meşhur olan şehirde, bisküvi sanayisi çok gelişmiştir ve batırık yemeği ile etli ekmek sıkça tüketilir."
+  },
+  {
+    "id": 71,
+    "name": "Kırıkkale",
+    "image_url": "/assets/images/cities/71.jpg",
+    "description": "Cumhuriyet döneminde kurulan mühimmat fabrikaları etrafında şekillenmiş, Kızılırmak'ın kıvrılarak geçtiği genç bir sanayi ve silah sanayisi şehridir. Tarihi Çeşnigir Köprüsü ve çevresindeki kanyon manzarası harikadır. Keskin tavası ve sızgıt yöre halkının vazgeçilmez lezzetleri arasındadır."
+  },
+  {
+    "id": 72,
+    "name": "Batman",
+    "image_url": "/assets/images/cities/72.jpg",
+    "description": "Türkiye'de petrolün ilk bulunduğu ve çıkarıldığı, ekonomisi petrole dayalı hızla büyüyen Güneydoğu şehridir. Sular altında kalan Dicle Nehri kıyısındaki antik kent Hasankeyf, binlerce yıllık mağaralarıyla tarihi bir hüzün ve güzellik taşır. Türküleri yapılan Malabadi Köprüsü de bu ilin sınırlarına yakındır."
+  },
+  {
+    "id": 73,
+    "name": "Şırnak",
+    "image_url": "/assets/images/cities/73.jpg",
+    "description": "Mezopotamya ovasına hakim sarp Cudi ve Gabar dağlarıyla çevrili, Nuh'un Gemisi'nin Cudi Dağı'na oturduğu efsanesiyle bilinen köklü bir sınır şehridir. Cizre ilçesindeki Mem û Zîn Türbesi aşıkların ziyaretgahıdır. Kök boyalarla dokunan şalım şapik kumaşları ve mehir çorbası şehrin geleneklerini yansıtır."
+  },
+  {
+    "id": 74,
+    "name": "Bartın",
+    "image_url": "/assets/images/cities/74.jpg",
+    "description": "Türkiye'de üzerinde tekneyle ulaşım yapılabilen tek nehir olan Bartın Çayı'na ve yemyeşil ormanlara sahip Batı Karadeniz şehridir. Tarihi ahşap evleri ve huzurlu plajlarıyla Amasra ve İnkumu ilçeleri turistlerin gözdesidir. Ağaç çileği, su böreği ve taze Karadeniz balıkları mutfağın hakimidir."
+  },
+  {
+    "id": 75,
+    "name": "Ardahan",
+    "image_url": "/assets/images/cities/75.jpg",
+    "description": "Kafkaslara açılan kapı konumundaki Ardahan, kışların çok sert geçtiği ve yılın büyük bölümü kar altında kalan yüksek rakımlı bir serhat şehridir. Kışın tamamen donan Çıldır Gölü üzerinde atlı kızak yapmak ve buz kırarak balık tutmak en büyük turistik aktivitedir. Şeytan Kalesi, kaşar peyniri ve kaz eti yörenin simgeleridir."
+  },
+  {
+    "id": 76,
+    "name": "Iğdır",
+    "image_url": "/assets/images/cities/76.jpg",
+    "description": "Ağrı Dağı'nın eteklerinde yer almasına rağmen, sahip olduğu mikroklima iklimi sayesinde pamuk ve kayısı gibi sıcak iklim ürünlerinin bile yetişebildiği sürprizli bir doğu şehridir. Üç ülkeye sınırı olmasıyla stratejik öneme sahiptir. Bozbaş yemeği ve Iğdır kayısısı şehrin en ünlü lezzetlerindendir."
+  },
+  {
+    "id": 77,
+    "name": "Yalova",
+    "image_url": "/assets/images/cities/77.jpg",
+    "description": "Marmara Denizi'nin kıyısında, şifalı termal suları, seraları ve gelişmiş çiçekçilik sektörüyle bilinen huzurlu bir yeşil şehirdir. Atatürk'ün ağaç dalı kesilmesin diye raylar üzerinde kaydırdığı Yürüyen Köşk şehrin en önemli sembolüdür. Termal kaplıcaları yılın her dönemi sağlık turizmine hizmet eder."
+  },
+  {
+    "id": 78,
+    "name": "Karabük",
+    "image_url": "/assets/images/cities/78.jpg",
+    "description": "Cumhuriyetin ilk ağır sanayi hamlesi olan demir çelik fabrikasıyla var olmuş bir işçi ve emekçi şehridir. Ancak sanayisinin hemen yanı başında, sivil Osmanlı mimarisinin kusursuz örneklerinden olan ve UNESCO korumasındaki Safranbolu evleri yer alır. Safranlı lokumu, Yenice Ormanları ve kuyu kebabı ile turizmde parlamaktadır."
+  },
+  {
+    "id": 79,
+    "name": "Kilis",
+    "image_url": "/assets/images/cities/79.jpg",
+    "description": "Suriye sınırında, zeytin ağaçları ve üzüm bağlarıyla çevrili, dar sokaklarında kesme taştan yapılmış avlulu evleri barındıran şirin bir Güneydoğu şehridir. Ravanda Kalesi ve Oylum Höyük antik alanları tarih meraklılarını çeker. Zırhla çekilmiş etten yapılan ve fırında pişen Kilis tavası, gastronomi harikasıdır."
+  },
+  {
+    "id": 80,
+    "name": "Osmaniye",
+    "image_url": "/assets/images/cities/80.jpg",
+    "description": "Çukurova'nın doğu kapısı olan Osmaniye, çam ormanları, kaleleri ve geniş fıstık tarlalarıyla bilinir. Türkiye'nin yer fıstığı üretim merkezidir. Açık hava müzesi konumundaki Karatepe Aslantaş ve Kastabala Antik Kenti bölge tarihine ışık tutar. Tirşik çorbası ve fıstıklı şekerlemeleri yöre halkı tarafından çok sevilir."
+  },
+  {
+    "id": 81,
+    "name": "Düzce",
+    "image_url": "/assets/images/cities/81.jpg",
+    "description": "İstanbul ile Ankara'nın tam ortasında yer alan Düzce, Güzeldere ve Samandere gibi gürül gürül akan şelaleleri, yaylaları ve ormanlarıyla bir doğa sporları merkezidir. Karadeniz'e kıyısı olan Akçakoca ilçesi tarihi Ceneviz Kalesi ve kumsallarıyla öne çıkar. Çerkes tavuğu ve isli peynir gibi çeşitli göçmen lezzetlerini mutfağında harmanlamıştır."
+  }
+]
