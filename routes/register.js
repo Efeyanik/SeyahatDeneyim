@@ -3,9 +3,6 @@ const bcrypt = require('bcryptjs');
 
 const router = express.Router();
 
-// TEST DB (şimdilik fake)
-const users = [];
-
 router.post('/register', async (req, res) => {
     try {
         const { username, password } = req.body;
