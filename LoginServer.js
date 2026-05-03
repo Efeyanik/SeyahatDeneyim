@@ -12,7 +12,6 @@ app.use(cors());
 const SECRET_KEY = 'benim_cok_gizli_anahtarim'; 
 
 // TEST İÇİN SAHTE VERİTABANI
-// Arkadaşın register'ı yazana kadar login'i test edebilmen için
 // Sisteme şifresi "123456" olan "test" adında bir kullanıcı ekliyoruz
 const users = [
     {
