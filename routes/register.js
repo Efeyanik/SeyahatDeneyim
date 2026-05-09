@@ -1,13 +1,18 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
+const users = require('../data/users');
 
 const router = express.Router();
 
 router.post('/register', async (req, res) => {
     try {
-        const { username, password } = req.body;
+        const username = req.body.username.trim();
+        const password = req.body.password.trim();
 
-        const existingUser = users.find(u => u.username === username);
+       const user = users.find(
+    u => u.username.trim().toLowerCase() === username.trim().toLowerCase()
+);
+
         if (existingUser) {
             return res.status(400).json({ message: "Kullanıcı zaten var." });
         }
