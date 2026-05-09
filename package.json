@@ -4,7 +4,7 @@
   "description": "",
   "main": "routes/login.js",
   "scripts": {
-  "start": "node routes/login.js",
+  "start": "nodemon routes/login.js",
   "test": "echo \"Error: no test specified\" && exit 1"
 },
   "repository": {
