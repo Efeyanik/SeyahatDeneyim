@@ -8,63 +8,40 @@ const registerRoutes = require('./register');
 
 const app = express();
 
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
 app.use(cors());
 
 const SECRET_KEY = 'benim_cok_gizli_anahtarim';
 
-// REGISTER ROUTE
 app.use('/auth', registerRoutes);
 
-// TEST ROUTE
 app.get('/users-test', (req, res) => {
     res.json(users);
 });
 
-// LOGIN ROUTE
 app.post('/login', async (req, res) => {
-
     try {
-
-        const username = req.body.username.trim();
-        const password = req.body.password.trim();
-
-        console.log("Gelen username:", username);
-        console.log("Kayıtlı kullanıcılar:", users);
+        const username = req.body.username?.trim();
+        const password = req.body.password?.trim();
 
         const user = users.find(
-            u =>
-                u.username.trim().toLowerCase()
-                ===
-                username.trim().toLowerCase()
+            u => u.username.toLowerCase() === username.toLowerCase()
         );
 
         if (!user) {
-            return res.status(404).json({
-                message: 'Kullanıcı bulunamadı.'
-            });
+            return res.status(404).json({ message: 'Kullanıcı bulunamadı.' });
         }
 
-        const isPasswordValid = await bcrypt.compare(
-            password,
-            user.password
-        );
+        const isPasswordValid = await bcrypt.compare(password, user.password);
 
         if (!isPasswordValid) {
-            return res.status(401).json({
-                message: 'Hatalı şifre.'
-            });
+            return res.status(401).json({ message: 'Hatalı şifre.' });
         }
 
         const token = jwt.sign(
-            {
-                id: user.id,
-                username: user.username
-            },
+            { id: user.id, username: user.username },
             SECRET_KEY,
-            {
-                expiresIn: '1h'
-            }
+            { expiresIn: '1h' }
         );
 
         res.status(200).json({
@@ -73,66 +50,79 @@ app.post('/login', async (req, res) => {
         });
 
     } catch (error) {
-
-        console.log(error);
-
-        res.status(500).json({
-            message: 'Sunucu hatası.'
-        });
+        res.status(500).json({ message: 'Sunucu hatası.' });
     }
 });
 
-// TOKEN MIDDLEWARE
 const authenticateToken = (req, res, next) => {
-
     const authHeader = req.headers['authorization'];
-
-    const token =
-        authHeader &&
-        authHeader.split(' ')[1];
+    const token = authHeader && authHeader.split(' ')[1];
 
     if (!token) {
-
-        return res.status(401).json({
-            message: 'Erişim reddedildi. Token gerekli.'
-        });
-
+        return res.status(401).json({ message: 'Token gerekli.' });
     }
 
     jwt.verify(token, SECRET_KEY, (err, user) => {
-
         if (err) {
-
-            return res.status(403).json({
-                message: 'Geçersiz veya süresi dolmuş token.'
-            });
-
+            return res.status(403).json({ message: 'Geçersiz token.' });
         }
 
         req.user = user;
-
         next();
-
     });
-
 };
 
-// PROTECTED ROUTE
 app.get('/profile', authenticateToken, (req, res) => {
+    const user = users.find(u => u.id === req.user.id);
+
+    if (!user) {
+        return res.status(404).json({ message: 'Kullanıcı bulunamadı.' });
+    }
 
     res.json({
-        message: 'Gizli bilgilere ulaştın!',
-        user: req.user
+        id: user.id,
+        username: user.username,
+        name: user.name,
+        profilePhoto: user.profilePhoto
     });
+});
 
+app.put('/profile/name', authenticateToken, (req, res) => {
+    const { name } = req.body;
+
+    const user = users.find(u => u.id === req.user.id);
+
+    if (!user) {
+        return res.status(404).json({ message: 'Kullanıcı bulunamadı.' });
+    }
+
+    user.name = name;
+
+    res.json({
+        message: 'İsim güncellendi.',
+        name: user.name
+    });
+});
+
+app.put('/profile/photo', authenticateToken, (req, res) => {
+    const { profilePhoto } = req.body;
+
+    const user = users.find(u => u.id === req.user.id);
+
+    if (!user) {
+        return res.status(404).json({ message: 'Kullanıcı bulunamadı.' });
+    }
+
+    user.profilePhoto = profilePhoto;
+
+    res.json({
+        message: 'Profil fotoğrafı güncellendi.',
+        profilePhoto: user.profilePhoto
+    });
 });
 
 const PORT = 3000;
 
 app.listen(PORT, () => {
-
-    console.log(
-        `Login Backend'i http://localhost:${PORT} adresinde çalışıyor.`
-    );
-
+    console.log(`Login Backend'i http://localhost:${PORT} adresinde çalışıyor.`);
 });
