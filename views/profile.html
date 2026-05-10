@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Ayarları</title>
+    <link rel="stylesheet" href="../public/css/profile.css">
+</head>
+<body>
+
+<div class="page">
+
+    <main class="main">
+
+        <section class="hero">
+            <div>
+                <p class="tag">Hesap Yönetimi</p>
+                <h1>Profil Ayarları</h1>
+                <p>Profil bilgilerini, görünen adını ve profil fotoğrafını buradan güncelleyebilirsin.</p>
+            </div>
+        </section>
+
+        <section class="profile-layout">
+
+            <div class="profile-card">
+                <div class="avatar-wrapper">
+                    <img 
+                        id="profilePhoto"
+                        src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                        alt="Profil Fotoğrafı"
+                    >
+                </div>
+
+                <h2 id="profileName">İsim</h2>
+                <p id="profileUsername">@username</p>
+
+                <div class="status-badge">Aktif Kullanıcı</div>
+            </div>
+
+            <div class="settings-panel">
+
+                <div class="panel-header">
+                    <h2>Profil Bilgileri</h2>
+                    <p>Hesabına ait bilgileri düzenle.</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Görünen İsim</label>
+                    <input type="text" id="newName" placeholder="Yeni isim gir">
+                    <button id="updateNameBtn">İsmi Güncelle</button>
+                </div>
+
+                <div class="form-group">
+                    <label>Profil Fotoğrafı</label>
+                    <input type="file" id="photoInput" accept="image/*">
+                    <button id="updatePhotoBtn">Fotoğrafı Güncelle</button>
+                </div>
+
+                <p id="profileMessage"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../public/js/profile.js"></script>
+
+</body>
+</html>
