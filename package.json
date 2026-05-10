@@ -2,9 +2,9 @@
   "name": "seyahatdeneyim",
   "version": "1.0.0",
   "description": "",
-  "main": "LoginServer.js",
+  "main": "routes/login.js",
   "scripts": {
-  "start": "node LoginServer.js",
+  "start": "nodemon routes/login.js",
   "test": "echo \"Error: no test specified\" && exit 1"
 },
   "repository": {

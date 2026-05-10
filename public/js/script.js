@@ -18,8 +18,8 @@ const messageBox = document.getElementById('message');
 loginForm.addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
 
     try {
         const response = await fetch(`${API_URL}/login`, {
@@ -39,6 +39,7 @@ loginForm.addEventListener('submit', async function (e) {
         } else {
             messageBox.innerText = data.message;
         }
+
     } catch (error) {
         console.error('Hata:', error);
         messageBox.innerText = 'Sunucuya bağlanırken hata oluştu.';
