@@ -19,18 +19,18 @@ body {
 }
 
 .sidebar {
-    width: 280px;
+    width: 240px;
     background: #020617;
     color: white;
-    padding: 32px 24px;
+    padding: 24px 18px;
     display: flex;
     flex-direction: column;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 800;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .logo span {
@@ -40,16 +40,17 @@ body {
 .sidebar nav {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .sidebar nav a {
     text-decoration: none;
     color: #94a3b8;
-    padding: 15px 18px;
-    border-radius: 16px;
+    padding: 13px 15px;
+    border-radius: 14px;
     transition: 0.25s;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .sidebar nav a:hover,
@@ -60,9 +61,9 @@ body {
 
 .logout-btn {
     margin-top: auto;
-    padding: 14px;
+    padding: 12px;
     border: none;
-    border-radius: 16px;
+    border-radius: 14px;
     background: #1e293b;
     color: white;
     font-weight: 700;
@@ -71,60 +72,64 @@ body {
 
 .main {
     flex: 1;
-    padding: 36px;
+    padding: 18px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .hero {
-    height: 230px;
-    border-radius: 34px;
-    padding: 42px;
+    min-height: 170px;
+    border-radius: 26px;
+    padding: 28px;
     color: white;
     background:
         radial-gradient(circle at top right, rgba(255,255,255,0.35), transparent 25%),
         linear-gradient(135deg, #4f46e5, #7c3aed, #ec4899);
     display: flex;
     align-items: center;
-    box-shadow: 0 25px 60px rgba(79, 70, 229, 0.28);
+    box-shadow: 0 18px 40px rgba(79, 70, 229, 0.22);
 }
 
 .tag {
     background: rgba(255,255,255,0.18);
     display: inline-block;
-    padding: 8px 14px;
+    padding: 6px 12px;
     border-radius: 999px;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     font-weight: 700;
+    font-size: 13px;
 }
 
 .hero h1 {
-    font-size: 42px;
-    margin-bottom: 12px;
+    font-size: 34px;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    max-width: 620px;
+    max-width: 550px;
     color: #eef2ff;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .profile-layout {
     display: grid;
-    grid-template-columns: 360px 1fr;
-    gap: 28px;
-    margin-top: 28px;
-    padding: 0;
-    width: 100%;
+    grid-template-columns: 300px 1fr;
+    gap: 18px;
+    flex: 1;
+    min-height: 0;
 }
 
 .profile-card,
 .settings-panel {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.92);
     backdrop-filter: blur(20px);
-    border-radius: 30px;
-    padding: 34px;
-    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+    border-radius: 24px;
+    padding: 22px;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
     border: 1px solid rgba(255,255,255,0.8);
+    overflow: hidden;
 }
 
 .profile-card {
@@ -132,78 +137,81 @@ body {
 }
 
 .avatar-wrapper {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto 24px;
-    border-radius: 32px;
-    padding: 6px;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 18px;
+    border-radius: 28px;
+    padding: 5px;
     background: linear-gradient(135deg, #6366f1, #ec4899);
 }
 
 #profilePhoto {
     width: 100%;
     height: 100%;
-    border-radius: 26px;
+    border-radius: 22px;
     object-fit: cover;
     background: white;
 }
 
 #profileName {
-    font-size: 28px;
-    margin-bottom: 6px;
+    font-size: 24px;
+    margin-bottom: 4px;
 }
 
 #profileUsername {
     color: #64748b;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    font-size: 14px;
 }
 
 .status-badge {
     display: inline-block;
-    padding: 10px 16px;
+    padding: 8px 14px;
     border-radius: 999px;
     background: #dcfce7;
     color: #166534;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .panel-header {
-    margin-bottom: 28px;
+    margin-bottom: 18px;
 }
 
 .panel-header h2 {
-    font-size: 28px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    margin-bottom: 6px;
 }
 
 .panel-header p {
     color: #64748b;
+    font-size: 14px;
 }
 
 .form-group {
     background: #f8fafc;
     border: 1px solid #e2e8f0;
-    border-radius: 24px;
-    padding: 24px;
-    margin-bottom: 22px;
+    border-radius: 18px;
+    padding: 16px;
+    margin-bottom: 14px;
 }
 
 label {
     display: block;
     font-weight: 800;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 input[type="text"],
 input[type="file"] {
     width: 100%;
-    padding: 15px 17px;
-    border-radius: 16px;
+    padding: 12px 14px;
+    border-radius: 14px;
     border: 1px solid #cbd5e1;
     outline: none;
-    margin-bottom: 14px;
-    font-size: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
     background: white;
 }
 
@@ -214,44 +222,35 @@ input:focus {
 
 button {
     width: 100%;
-    padding: 15px;
+    padding: 13px;
     border: none;
-    border-radius: 16px;
+    border-radius: 14px;
     background: linear-gradient(135deg, #4f46e5, #7c3aed);
     color: white;
     font-weight: 800;
     cursor: pointer;
     transition: 0.25s;
+    font-size: 14px;
 }
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 14px 30px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 10px 24px rgba(79, 70, 229, 0.25);
 }
 
 #profileMessage {
     color: #4f46e5;
     font-weight: 800;
-    margin-top: 12px;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-@media (max-width: 950px) {
-    body {
-        overflow: auto;
-    }
-
-    .page {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .sidebar {
-        width: 100%;
-    }
-
+@media (max-width: 1100px) {
     .profile-layout {
-        grid-template-columns: 1fr;
-        margin-top: 24px;
-        padding: 0;
+        grid-template-columns: 260px 1fr;
+    }
+
+    .hero h1 {
+        font-size: 28px;
     }
 }
