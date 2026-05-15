@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeni Rota Paylaş</title>
+    <link rel="stylesheet" href="/public/css/create-route.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="routeForm">
+        <h1>Yeni Rota Keşfi</h1>
+        <span>Deneyimlerini ve haritanı seyyahlarla paylaş</span>
+
+        <input
+          type="text"
+          id="title"
+          placeholder="Rota Başlığı (Örn: Taşköprü Civarı Kebap Turu)"
+          required
+        />
+        <textarea
+          id="content"
+          placeholder="Rotanı detaylandır, nerede ne yenir, nasıl gidilir?"
+          required
+        ></textarea>
+
+        <div class="file-wrapper">
+          <label for="image">Rota Görseli Seç (İsteğe Bağlı)</label>
+          <input type="file" id="image" accept="image/*" />
+        </div>
+
+        <button type="submit">Yayınla</button>
+      </form>
+    </div>
+
+    <script src="/public/js/create-route.js"></script>
+  </body>
+</html>

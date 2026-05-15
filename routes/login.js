@@ -44,9 +44,14 @@ app.post('/login', async (req, res) => {
             { expiresIn: '1h' }
         );
 
-        res.status(200).json({
+        res.json({
             message: 'Giriş başarılı.',
-            token
+            token: token,
+            user: {
+                id: user.id,
+                username: user.username,
+                name: user.name
+            }
         });
 
     } catch (error) {
@@ -54,12 +59,13 @@ app.post('/login', async (req, res) => {
     }
 });
 
+// JWT Doğrulama Middleware'i
 const authenticateToken = (req, res, next) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
 
     if (!token) {
-        return res.status(401).json({ message: 'Token gerekli.' });
+        return res.status(401).json({ message: 'Erişim engellendi. Token eksik.' });
     }
 
     jwt.verify(token, SECRET_KEY, (err, user) => {
@@ -106,7 +112,6 @@ app.put('/profile/name', authenticateToken, (req, res) => {
 
 app.put('/profile/photo', authenticateToken, (req, res) => {
     const { profilePhoto } = req.body;
-
     const user = users.find(u => u.id === req.user.id);
 
     if (!user) {
@@ -121,8 +126,5 @@ app.put('/profile/photo', authenticateToken, (req, res) => {
     });
 });
 
-const PORT = 3000;
-
-app.listen(PORT, () => {
-    console.log(`Login Backend'i http://localhost:${PORT} adresinde çalışıyor.`);
-});
+// Projenin server.js üzerinden tek porttan (3000) çalışabilmesi için uygulamayı dışa aktarıyoruz
+module.exports = app;

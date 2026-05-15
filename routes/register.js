@@ -9,9 +9,10 @@ router.post('/register', async (req, res) => {
         const username = req.body.username.trim();
         const password = req.body.password.trim();
 
-       const user = users.find(
-    u => u.username.trim().toLowerCase() === username.trim().toLowerCase()
-);
+        // BURASI DÜZELTİLDİ: Değişken ismi existingUser yapıldı
+        const existingUser = users.find(
+            u => u.username.trim().toLowerCase() === username.trim().toLowerCase()
+        );
 
         if (existingUser) {
             return res.status(400).json({ message: "Kullanıcı zaten var." });
@@ -22,11 +23,12 @@ router.post('/register', async (req, res) => {
         const newUser = {
             id: users.length + 1,
             username,
-            password: hashedPassword
+            password: hashedPassword,
+            name: username, // Profil ekranında hata vermemesi için varsayılan isim
+            profilePhoto: ""
         };
 
         users.push(newUser);
-
         res.status(201).json({ message: "Kayıt başarılı." });
 
     } catch (error) {
