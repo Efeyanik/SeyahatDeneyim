@@ -223,3 +223,251 @@ body{
 .error {
     color: red;
 }
+
+/* =========================
+   HOME VE CITIES SAYFALARI
+========================= */
+
+body.home-page,
+body.cities-page {
+    min-height: 100vh;
+    height: auto;
+    display: block;
+    align-items: initial;
+    justify-content: initial;
+    flex-direction: initial;
+    background: linear-gradient(to right, #eef2ff, #f8fafc);
+    color: #1f2937;
+}
+
+.page-navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 0 8%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #512da8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #374151;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #512da8;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: 420px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(34, 20, 80, 0.68), rgba(34, 20, 80, 0.68)),
+        url('/public/assets/images/cities/34.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.primary-btn {
+    background-color: #ffffff;
+    color: #512da8;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: #512da8;
+    color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background-color: #3f2187;
+}
+
+.page-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 24px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.section-header h1,
+.section-header h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.section-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.search-area {
+    max-width: 620px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+.search-area input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+.search-area input:focus {
+    border-color: #512da8;
+    box-shadow: 0 0 0 3px rgba(81, 45, 168, 0.12);
+}
+
+#cityResultInfo {
+    margin-top: 12px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.city-list-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #1f2937;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease;
+}
+
+.city-list-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.city-list-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.city-list-content {
+    padding: 18px;
+}
+
+.city-list-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.city-list-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6b7280;
+    margin-bottom: 14px;
+}
+
+.city-list-content span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #512da8;
+}
+
+.center-area {
+    margin-top: 36px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .page-navbar {
+        padding: 16px 24px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section {
+        min-height: 360px;
+        padding: 60px 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .section-header h1,
+    .section-header h2 {
+        font-size: 28px;
+    }
+}
