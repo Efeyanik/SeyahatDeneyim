@@ -1,18 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 body {
   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  padding: 40px 20px;
+  padding: 0; /* Üst padding'i navbar için sıfırladık */
   color: #333;
   min-height: 100vh;
 }
 
+/* --- ORTAK NAVBAR STİLLERİ --- */
+.page-navbar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.page-navbar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #512da8;
+}
+
+.page-navbar .nav-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.2s ease;
+  font-size: 15px;
+}
+
+.page-navbar .nav-links a:hover {
+  color: #512da8;
+}
+
+/* Sayfa içeriğinin sabit navbar altında kalmaması için boşluk alanı */
 .page-container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 100px auto 40px auto; /* Üst marjı navbar yüksekliğine göre ayarladık */
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding: 0 20px;
 }
 
 /* Şehir Kartı */
@@ -42,49 +80,7 @@ body {
   font-weight: 700;
 }
 
-.city-info p {
-  font-size: 15px;
-  line-height: 24px;
-  color: #555;
-}
-
-/* Aksiyon Çubuğu */
-.action-bar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.main-btn {
-  background-color: #512da8;
-  color: #fff;
-  font-size: 13px;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 10px rgba(81, 45, 168, 0.3);
-}
-
-.main-btn:hover {
-  background-color: #3f1d8c;
-  transform: translateY(-2px);
-}
-
-/* Bölüm Başlığı */
-.section-title h2 {
-  font-size: 24px;
-  color: #512da8;
-  margin-bottom: 5px;
-}
-.section-title p {
-  font-size: 13px;
-  color: #666;
-}
-
-/* Rota Grid */
+/* Rotalar Grid Sistemi */
 #routes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -131,46 +127,78 @@ body {
 }
 
 .route-body p {
-  font-size: 13px;
+  font-size: 14px;
   color: #666;
-  line-height: 18px;
+  line-height: 1.5;
 }
 
-/* Alt Etkileşim Barı */
 .route-footer {
   padding: 15px 20px;
-  background-color: #f9f9f9;
   border-top: 1px solid #eee;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .interaction-btn {
-  border: 1px solid #ccc;
-  background: #fff;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #666;
+  transition: 0.2s;
+}
+
+.interaction-btn i {
+  font-size: 16px;
+}
+
+.interaction-btn:hover {
+  color: #512da8;
+}
+
+.active-like {
+  color: #ff4757 !important;
+}
+
+.active-save {
+  color: #2ed573 !important;
+}
+
+.action-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-btn {
+  background-color: #512da8;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 5px;
-  transition: 0.2s;
+  gap: 8px;
+  transition: 0.3s;
 }
 
-.interaction-btn:hover {
-  background-color: #eee;
+.main-btn:hover {
+  background-color: #4527a0;
 }
 
-.interaction-btn.active-like {
-  background-color: #fee2e2;
-  color: #ef4444;
-  border-color: #fca5a5;
+.section-title h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
 }
 
-.interaction-btn.active-save {
-  background-color: #fef3c7;
-  color: #d97706;
-  border-color: #fcd34d;
+.section-title p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
 }
