@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="/public/css/create-route.css" />
   </head>
   <body>
+    <nav class="page-navbar">
+        <div class="logo">Seyahat Deneyim</div>
+        <div class="nav-links">
+            <a href="/views/home.html">Ana Sayfa</a>
+            <a href="/views/cities.html">Tüm Şehirler</a>
+            <a href="/views/profile.html">Profil</a>
+        </div>
+    </nav>
+
     <div class="container">
       <form id="routeForm">
         <h1>Yeni Rota Keşfi</h1>
@@ -15,7 +24,7 @@
         <input
           type="text"
           id="title"
-          placeholder="Rota Başlığı (Örn: Taşköprü Civarı Kebap Turu)"
+          placeholder=\"Rota Başlığı (Örn: Taşköprü Civarı Kebap Turu)\"
           required
         />
         <textarea

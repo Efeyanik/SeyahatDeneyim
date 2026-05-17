@@ -1,13 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 body {
   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
   font-family: "Montserrat", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  padding-top: 80px; /* Üstteki navbar için alan ayırdık */
 }
 
+/* --- ORTAK NAVBAR STİLLERİ --- */
+.page-navbar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.page-navbar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #512da8;
+}
+
+.page-navbar .nav-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.2s ease;
+  font-size: 15px;
+}
+
+.page-navbar .nav-links a:hover {
+  color: #512da8;
+}
+
+/* Form Konteyner */
 .container {
   background-color: #fff;
   border-radius: 30px;
@@ -15,6 +53,7 @@ body {
   overflow: hidden;
   width: 450px;
   padding: 40px;
+  margin: 20px 0;
 }
 
 .container form {
@@ -43,7 +82,7 @@ body {
   border: none;
   margin: 8px 0;
   padding: 12px 15px;
-  font-size: 13px;
+  font-size: 14px;
   border-radius: 8px;
   width: 100%;
   outline: none;
@@ -51,38 +90,47 @@ body {
 }
 
 .container textarea {
-  height: 120px;
-  resize: none;
+  min-height: 120px;
+  resize: vertical;
 }
 
 .file-wrapper {
   width: 100%;
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .file-wrapper label {
-  font-size: 12px;
-  font-weight: 600;
   display: block;
-  margin-bottom: 5px;
-  color: #512da8;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.file-wrapper input[type="file"] {
+  width: 100%;
+  font-size: 13px;
 }
 
 .container button {
+  border-radius: 20px;
+  border: 1px solid #512da8;
   background-color: #512da8;
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
+  font-weight: bold;
   padding: 12px 45px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 15px;
+  transition: transform 80ms ease-in;
   cursor: pointer;
-  width: 100%;
-  transition: 0.2s;
+  margin-top: 15px;
 }
 
-.container button:hover {
-  background-color: #3f1d8c;
+.container button:active {
+  transform: scale(0.95);
+}
+
+.container button:focus {
+  outline: none;
 }
