@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa | Seyahat Deneyim</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body class="home-page">
+<!-- Sayfanın üst menü alanı: Ana sayfa, şehirler ve profil sayfasına yönlendirme yapar -->
+    <nav class="page-navbar">
+        <div class="logo">Seyahat Deneyim</div>
+
+        <div class="nav-links">
+            <a href="/views/home.html">Ana Sayfa</a>
+            <a href="/views/cities.html">Tüm Şehirler</a>
+            <a href="/views/profile.html">Profil</a>
+        </div>
+    </nav>
+
+    <!-- Ana karşılama alanı: Kullanıcıya platformun amacını tanıtır -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Türkiye'nin Şehirlerini Deneyimlerle Keşfet</h1>
+            <p>
+                Gezginlerin şehirler hakkında paylaştığı rotaları, önerileri ve deneyimleri incele.
+                Kendi seyahat planını daha bilinçli oluştur.
+            </p>
+
+            <!-- Kullanıcıyı tüm şehirlerin listelendiği sayfaya yönlendiren buton -->
+            <a href="/views/cities.html" class="primary-btn">Tüm Şehirleri Gör</a>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <section class="section-header">
+            <h2>Popüler Şehirler</h2>
+            <p>Ana sayfada sadece seçili şehirler gösterilir. Böylece sayfa daha hızlı açılır.</p>
+        </section>
+
+       <!-- Şehir kartları city-list.js dosyası tarafından buraya dinamik olarak eklenecek -->
+         <section id="featuredCities" class="city-grid"></section>
+
+        <div class="center-area">
+            <a href="/views/cities.html" class="secondary-btn">81 İlin Tamamını Gör</a>
+        </div>
+    </main>
+    
+<!-- Şehir verilerini JSON dosyasından çekip bu sayfaya basan JavaScript dosyası -->
+<script src="/public/js/city-list.js"></script>
+</body>
+
+</html>
