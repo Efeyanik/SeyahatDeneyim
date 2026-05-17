@@ -18,11 +18,9 @@ async function renderPage() {
     const city = cities.find(c => c.id == cityId);
 
     if (city) {
-        let correctedImageUrl = city.image_url.replace('../public/', '/public/');
-
         document.getElementById('city-hero-container').innerHTML = `
             <div class="city-card">
-                <img src="${correctedImageUrl}" alt="${city.name}">
+                <img src="${city.image_url}" alt="${city.name}">
                 <div class="city-info">
                     <h1>${city.name}</h1>
                     <p>${city.description}</p>

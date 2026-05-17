@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = '';
 
 const container = document.getElementById('container');
 const registerBtn = document.getElementById('register');

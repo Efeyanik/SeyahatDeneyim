@@ -28,17 +28,26 @@ app.get('/views/create-route.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'create-route.html'));
 });
 
+app.get('/views/home.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'home.html'));
+});
+
+app.get('/views/cities.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'cities.html'));
+});
+
+app.get('/views/profile.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'profile.html'));
+});
+
 // --- API VE ROTA ENTEGRASYONLARI ---
 // 1. Senin yazdığın rota paylaşım API'leri
 const routeApi = require("./routes/routes"); 
 app.use("/api/routes", routeApi);
 
-// 2. Arkadaşının login.js içeriğini fonksiyonel olarak buraya bağlıyoruz
-// Arkadaşının login.js içindeki express uygulamasını sunucuya dahil etmek için import ediyoruz.
-const loginApp = require("./routes/login");
-if (typeof loginApp === 'function' || loginApp.handle) {
-    app.use("/", loginApp);
-}
+// 2. Auth ve Profil işlemleri
+const loginRoutes = require("./routes/login");
+app.use("/", loginRoutes);
 
 // Ana sunucuyu tek bir porttan (3000) ayağa kaldırıyoruz
 const PORT = 3000;

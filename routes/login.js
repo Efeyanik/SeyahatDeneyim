@@ -1,25 +1,21 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const cors = require('cors');
 
 const users = require('../data/users');
 const registerRoutes = require('./register');
 
-const app = express();
-
-app.use(express.json({ limit: '10mb' }));
-app.use(cors());
+const router = express.Router();
 
 const SECRET_KEY = 'benim_cok_gizli_anahtarim';
 
-app.use('/auth', registerRoutes);
+router.use('/auth', registerRoutes);
 
-app.get('/users-test', (req, res) => {
+router.get('/users-test', (req, res) => {
     res.json(users);
 });
 
-app.post('/login', async (req, res) => {
+router.post('/login', async (req, res) => {
     try {
         const username = req.body.username?.trim();
         const password = req.body.password?.trim();
@@ -78,7 +74,7 @@ const authenticateToken = (req, res, next) => {
     });
 };
 
-app.get('/profile', authenticateToken, (req, res) => {
+router.get('/profile', authenticateToken, (req, res) => {
     const user = users.find(u => u.id === req.user.id);
 
     if (!user) {
@@ -93,7 +89,7 @@ app.get('/profile', authenticateToken, (req, res) => {
     });
 });
 
-app.put('/profile/name', authenticateToken, (req, res) => {
+router.put('/profile/name', authenticateToken, (req, res) => {
     const { name } = req.body;
 
     const user = users.find(u => u.id === req.user.id);
@@ -110,7 +106,7 @@ app.put('/profile/name', authenticateToken, (req, res) => {
     });
 });
 
-app.put('/profile/photo', authenticateToken, (req, res) => {
+router.put('/profile/photo', authenticateToken, (req, res) => {
     const { profilePhoto } = req.body;
     const user = users.find(u => u.id === req.user.id);
 
@@ -127,4 +123,4 @@ app.put('/profile/photo', authenticateToken, (req, res) => {
 });
 
 // Projenin server.js üzerinden tek porttan (3000) çalışabilmesi için uygulamayı dışa aktarıyoruz
-module.exports = app;
+module.exports = router;

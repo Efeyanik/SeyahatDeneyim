@@ -45,14 +45,11 @@ function showCities(cities, container) {
     container.innerHTML = '';
 
     cities.forEach(city => {
-        // JSON içindeki görsel yolunu tarayıcıda çalışacak hale getiriyoruz
-        const imagePath = city.image_url.replace('../public', '/public');
-
         // Her şehir için tıklanabilir bir şehir kartı oluşturuyoruz
         container.innerHTML += `
             <a href="/views/city.html?id=${city.id}" class="city-list-card">
                 <img 
-                    src="${imagePath}" 
+                    src="${city.image_url}" 
                     alt="${city.name}" 
                     class="city-list-image"
                     loading="lazy"
