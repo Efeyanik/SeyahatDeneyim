@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tüm Şehirler | Seyahat Deneyim</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body class="cities-page">
+
+    <nav class="page-navbar">
+        <div class="logo">Seyahat Deneyim</div>
+
+        <div class="nav-links">
+            <a href="/views/home.html">Ana Sayfa</a>
+            <a href="/views/cities.html">Tüm Şehirler</a>
+            <a href="/views/profile.html">Profil</a>
+        </div>
+    </nav>
+
+    <main class="page-wrapper">
+        <section class="section-header">
+            <h1>Tüm Şehirler</h1>
+            <p>
+                Türkiye'deki şehirleri inceleyebilir, ilgilendiğin şehrin detay ve rota sayfasına geçebilirsin.
+            </p>
+        </section>
+
+        <section class="search-area">
+            <input type="text" id="citySearchInput" placeholder="Şehir ara... Örneğin: İstanbul">
+            <p id="cityResultInfo"></p>
+        </section>
+
+        <section id="allCitiesGrid" class="city-grid"></section>
+    </main>
+
+  <script src="/public/js/city-list.js"></script>
+</body>
+
+</html>
