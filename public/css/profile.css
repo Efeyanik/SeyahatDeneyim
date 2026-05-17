@@ -27,15 +27,9 @@ body {
     flex-direction: column;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: 800;
-    margin-bottom: 35px;
-}
 
-.logo span {
-    color: #818cf8;
-}
+
+
 
 .sidebar nav {
     display: flex;
